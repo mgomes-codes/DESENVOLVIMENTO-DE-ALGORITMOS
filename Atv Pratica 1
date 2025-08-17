@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() {
+	float lab;
+	float pj;
+	float pf;
+	
+	// pedindo os dados
+	
+	printf("Digite a nota do lab:");
+	scanf("%f", &lab);
+	
+	printf("Digite a nota do projeto:");
+	scanf("%f", &pj);
+	
+	printf("Digite a nota da prova final:");
+	scanf("%f", &pf);
+	
+	// conta e resultado
+	
+	float nota = (0.2 * lab) + (0.8 * sqrt(pj * pf));
+	printf("Nota final: %f\n", nota);
+	
+	system("pause");
+	return 0;
+}
