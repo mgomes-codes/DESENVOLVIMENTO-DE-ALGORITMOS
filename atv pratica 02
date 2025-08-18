@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+	int hora, min, seg;
+	
+	// pedindo o horario
+	printf ("Digite o horário atual:");
+	scanf("%02d:%02d:%02d", &hora,&min,&seg);
+
+	// calculo do horario
+	int dia_seg = 24 * 60 * 60; // segundo no dia (86400)
+	int transformar_em_seg = hora * 3600 + min * 60 + seg; // horario do usuário em seg
+	int seg_faltando = dia_seg - transformar_em_seg; // diferança de segundos
+	
+	// resultado
+	printf ("Seu horário: %02d:%02d:%02d\n", hora, min, seg);
+	printf("Segundos faltando ate meia noite: %d\n" , seg_faltando);
+
+	
+	system("pause");
+	
+	return 0;
+}
