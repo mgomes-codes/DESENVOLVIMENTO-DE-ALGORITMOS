@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+int x;
+int y;
+int z;
+
+printf("Digite a primeira nota:");
+scanf("%d", &x);
+
+printf("Digite a segunda nota:");
+scanf("%d", &y);
+
+printf("Digite a terceira nota:");
+scanf("%d", &z);
+
+int nota = x + y + z / 3;
+
+if (nota >= 7) {
+	printf("Aluno aprovado");
+}else if(nota >= 5 && nota < 7) {
+	printf("Aluno em recuperação");
+}else {
+	printf("Aluno reprovado");
+}
+
+	system("pause");
+	return 0;
+}
