@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+int a;
+int b;
+int opcao;
+
+printf("Digite uma opcao\n (1) soma (2) subtracao (3) multiplicacao (4) divisao\n ");
+scanf("%d" , &opcao);
+
+printf("Digite o primeiro numero:");
+scanf("%d" , &a);
+
+printf("Digite o segundo numero:");
+scanf("%d" , &b);
+
+int soma = a + b;
+int sub = a - b;
+int mult = a * b;
+int div = a / b;
+
+switch(opcao){
+	case 1:
+		printf("resultado: %d\n" , soma);
+		break;
+    case 2:
+		printf("resultado: %d\n" , sub);
+		break;
+    case 3:
+		printf("resultado: %d\n" , mult);
+		break;
+    case 4:
+		printf("resultado: %d\n" , div);
+		break;
+}
+
+	system("pause");
+	return 0;
+}
