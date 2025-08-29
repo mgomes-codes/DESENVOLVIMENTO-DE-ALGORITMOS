@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+int opcao;
+
+printf("Digite um numero de 1 a 7:");
+scanf("%d" , &opcao);
+
+switch(opcao){
+	case 1:
+		printf("1 = domingo\n");
+		break;
+    case 2:
+		printf("2 = segunda\n");
+		break;
+    case 3:
+		printf("3 = terca\n");
+		break;
+    case 4:
+		printf("4 = quarta\n");
+		break;
+    case 5:
+		printf("5 = quinta\n");
+		break;
+    case 6:
+		printf("6 = sexta\n");
+		break;
+    case 7:
+		printf("7 = sabado\n");
+		break;
+	default:
+		printf("opcao invalida\n");
+		break;
+
+}
+
+	system("pause");
+	return 0;
+}
