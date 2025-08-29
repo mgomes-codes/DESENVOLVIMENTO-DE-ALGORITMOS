@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+int i;
+
+printf("Digite sua idade:");
+scanf("%d", &i);
+
+int maior = (i >= 18)? 1:0;
+
+if(maior == 1)
+	printf("Maior de idade");
+else
+	printf("Menor de idade");
+
+	system("pause");
+	return 0;
+}
