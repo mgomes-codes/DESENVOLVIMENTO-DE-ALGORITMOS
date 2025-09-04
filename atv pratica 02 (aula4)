@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+int i = 5;
+printf("%d\n", i++); // printa o valor de i (5) e incrementa mais 1
+
+int i = 5;
+printf("%d\n", ++i); // incrementa 1 e depois printa o valor de i (1+5)
+
+	system("pause");	
+	return 0;
+}
