@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+// for
+
+int i;
+int n;
+int soma = 0;
+
+printf("Digite um numero:"); // pedindo o numero
+scanf("%d", &n);
+
+for (i = 1; i < n; i++){ // adicionando o numero na variavel i
+	soma = soma + i; // fazendo a soma (soma = 0 + 1 / soma = 1 + 2)
+	printf("%d\n", soma);
+}
+
+	system("pause");	
+	return 0;
+}
+
+// while
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+int i = 1;
+int soma = 0;
+int n;
+
+printf("Digite um numero:");
+scanf("%d", &n);
+
+while(i < n){
+	soma = soma + i; // fazendo a soma (soma = 0 + 1 / soma = 1 + 2)
+	printf("%d\n", soma);
+	i++;
+}
+
+	system("pause");	
+	return 0;
+}
