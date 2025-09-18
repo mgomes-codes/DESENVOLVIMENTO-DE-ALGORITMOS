@@ -6,16 +6,14 @@ int main(int argc, char *argv[]) {
 int array[5];
 int i;
 
-
     for (i = 0; i < 5; i++) {
-        printf("Insira os numeros: ", i + 1);
+        printf("DIgite os numeros: ", i + 1);
         scanf("%d", &array[i]);
     }
 
     for (i = 0; i < 5; i++) {
         printf("%d ", array[i]);
     }
-    printf("\n");
 
 	system("pause");	
 	return 0;
