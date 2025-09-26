@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+char dias[8][7];
+
+strcpy(dias[0],"domingo");
+strcpy(dias[1],"segunda");
+strcpy(dias[2],"terça");
+strcpy(dias[3],"quarta");
+strcpy(dias[4],"quinta");
+strcpy(dias[5],"sexta");
+strcpy(dias[6],"sabado");
+
+printf("%s", dias[3]);
+
+	system("pause");
+	return 0;
+}
