@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+char str[8] = "Matheus";
+char str2[8] = {
+	'M' , 'a' , 't' , 'h' , 'e' , 'u' , 's',NULL};
+char n[8] = "Matheus";
+	
+	int r = strcmp(n,str);
+	printf("%d\n", r);
+	
+	int s = strcmp(n,str2);
+	printf("%d\n", s);
+	
+	system("pause");
+	return 0;
+}
