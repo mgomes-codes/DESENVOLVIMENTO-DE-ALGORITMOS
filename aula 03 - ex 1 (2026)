@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int potencia_cal (int num, int exp){
+	int resultado = 1; // todo numero multiplicado por 1 é ele mesmo
+	
+	int i;
+	for (i = 0; i < exp; i++){
+	resultado = resultado * num; // 1*2 = 2 --> 2*2 = 4 --> 4*2 = 8
+	}
+	return resultado;
+}
+
+void main(int argc, char *argv[]){
+
+	int num_usuario;
+	int exp_usuario;
+	
+	printf("Digite o numero da potencia: ");
+	scanf("%d", &num_usuario);
+	
+	printf("Digite o expoente da potencia:");
+	scanf("%d", &exp_usuario);
+	
+	int result_final = potencia_cal(num_usuario, exp_usuario);
+	printf("\nO resultado e: %d\n", result_final);
+
+	system("pause");	
+	return 0;
+}
