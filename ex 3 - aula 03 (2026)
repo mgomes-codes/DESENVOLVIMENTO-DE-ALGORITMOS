@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void modifica(int *x) {
+
+    if (*x % 2 == 0) {
+        *x = *x + 1;
+    } else {
+        *x = *x + 2;
+    }
+}
+
+int main(int argc, char *argv[]) {
+
+	int x;
+	printf("Digite um numero: \n");
+	scanf("%d" , &x);
+	modifica(&x);
+	printf("valor: %d \n", x);
+
+	system("pause");	
+	return 0;
+}
