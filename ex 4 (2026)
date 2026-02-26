@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// distancia que um passageiro percorre em km
+// r$ 0,50 por km para viagens até 200km
+// r$ 0,40 por km para viagens +200km
+
+int main(int argc, char *argv[]) {
+
+	float km;
+
+	printf("Digite os km rodados:");
+	scanf("%f", &km);
+	
+	if (km > 200){
+		float km_longo = km * 0.40;
+		printf("O valor ficou R$%.2f", km_longo);
+	}
+	else {
+		float km_curto = km * 0.50;
+		printf("O valor ficou R$%.2f", km_curto);
+	}
+
+	system("pause");	
+	return 0;
+}
