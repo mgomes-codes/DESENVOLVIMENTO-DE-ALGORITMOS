@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Loja oferece 5% de desconto para funcionarios
+//loja oferece 3% de desconto para clientes comprem + R$ 1000
+// fazer um switch para saber qual pessoa é (funcionario ou cliente)
+
+int main(int argc, char *argv[]) {
+
+	int opcao;
+	float compras, desconto_func, desconto_func_final;
+    float desc_cliente, desc_cliente_final;
+	
+	printf("Digite uma opcao\n (1) Funcionário (2) Cliente \n ");
+	scanf("%d" , &opcao);
+	
+	printf ("Digite o valor das compras:\n");
+	scanf("%f", &compras);
+	
+	switch(opcao){
+		case 1:
+			desconto_func = 0.05 * 100;
+			desconto_func_final = compras - desconto_func;
+			printf("Suas compras ficaram:  R$%.2f\n", desconto_func_final);
+			break;
+			
+		case 2:
+			desc_cliente = 0.03 * 100;
+			desc_cliente_final = compras - desc_cliente;
+			printf("Suas compras ficaram R$%.2f\n", desc_cliente_final);
+			break;
+			
+        default:
+		printf("opcao invalida\n");
+		break;
+}
+
+	system("pause");	
+	return 0;
+}
