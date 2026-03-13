@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+    int num[5];
+    int i;
+
+    printf("Digite os numeros:\n");
+    for (i = 0; i < 5; i++) {
+        printf("posicao %d: ", i);
+        // CORREÇÃO 1: Faltava o comando scanf para ler o que você digita
+        scanf("%d", &num[i]);
+    }
+
+    printf("\nOrdem decrescente:\n");
+    // CORREÇÃO 2: O 'i' deve começar em 4 (última posição) e diminuir (i--)
+    // Se começar em 0 e for i--, ele vai para números negativos imediatamente
+    for (i = 4; i >= 0; i--) {
+        printf("%d ", num[i]);
+    }
+
+    printf("\n");
+    system("pause");
+    return 0;
+}
