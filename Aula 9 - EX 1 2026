@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// declara um int, float(real), char e ponteiros para int, float(real) e char
+// associar as variaveis usando "&"
+// modificar as variaveis usando ponteiros
+// imprimir antes e depois
+
+int main(int argc, char *argv[]) {
+
+	int a = 10;
+	int *aPtr;
+	aPtr = &a;
+	printf("Inteiro 'a' antes: %d\n", a);
+	*aPtr = 20;
+	printf("Inteiro 'a' depois: %d\n", a);
+	
+	float b = 5.5;
+	float *bPtr;
+	bPtr = &b;
+	printf("Float 'b' antes: %.1f\n", b);
+	*bPtr = 12.5;
+	printf("Float 'b' depois: %.1f\n", b);
+	
+	char c = 'm';
+	char *cPtr;
+	cPtr = &c;
+	printf("Char 'c' antes: %c\n", c);
+	*cPtr = 'z';
+	printf("Char 'c' depois: %c\n", c);
+
+
+	system("pause");	
+	return 0;
+}
